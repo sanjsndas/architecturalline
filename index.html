@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Line Theory — Interior Design & Architecture Journal</title>
+    <meta name="description" content="In-depth articles on architecture, interior design, space planning, materials, lighting, and sustainable homes. A premium editorial publication for design professionals and enthusiasts.">
+    <meta name="keywords" content="architecture blog, interior design, home design, materials, space planning, lighting, furniture, modern homes, sustainable design">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Architectural Line Theory — Interior Design & Architecture Journal">
+    <meta property="og:description" content="Long-form articles on architecture, interiors, materials, lighting, and practical design guides.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://archline.theory/">
+    <meta property="og:image" content="https://plus.unsplash.com/premium_photo-1681550097108-187abe10d445?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXJjaGl0ZWN0dXJlfGVufDB8fDB8fHww">
+    <link rel="canonical" href="https://archline.theory/">
+
+    <!-- Schema.org for Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Architectural Line Theory",
+      "description": "In-depth architecture and interior design articles, guides, and criticism.",
+      "url": "https://archline.theory/",
+      "author": {
+        "@type": "Organization",
+        "name": "Architectural Line Theory"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "The Silent Language of Space: How Plan Layouts Shape Daily Life",
+          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+          "author": { "@type": "Person", "name": "Elena Marchetti" }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1e1e1e;
+            --paper: #faf9f7;
+            --paper-alt: #f2f0ed;
+            --accent: #b75c3a;
+            --accent-soft: #d9c9b6;
+            --border-subtle: #e0dbd5;
+            --text-secondary: #4a4a4a;
+            --font-serif: 'Georgia', 'Times New Roman', 'Times', serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --spacing-unit: 1.5rem;
+            --radius: 4px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            padding: 0 1.25rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.6rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 2rem; margin-top: 2.5rem; margin-bottom: 1.2rem; }
+        h3 { font-size: 1.45rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+        h4 { font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+            color: var(--accent);
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent-soft);
+            padding-left: 1.5rem;
+            margin: 1.8rem 0;
+            font-style: italic;
+            color: #3d3d3d;
+            font-size: 1.1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius);
+            margin: 1.8rem 0;
+            background: #e8e4df;
+        }
+
+        /* ---------- HEADER ---------- */
+        .blog-header {
+            padding: 2rem 0 1rem;
+            border-bottom: 2px solid var(--ink);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .logo-area {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            color: var(--ink);
+            border-bottom: none;
+        }
+
+        .logo span {
+            font-weight: 400;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-top: 0.3rem;
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 500;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links a {
+            border-bottom: none;
+            color: var(--text-secondary);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* ---------- MAIN LAYOUT ---------- */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3.5rem;
+            align-items: start;
+        }
+
+        /* ---------- ARTICLE CARDS ---------- */
+        .featured-article {
+            background: var(--paper-alt);
+            padding: 2rem 2rem 1.8rem;
+            border-radius: var(--radius);
+            margin-bottom: 2.5rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .featured-article h2 {
+            margin-top: 0.5rem;
+            font-size: 2.2rem;
+        }
+
+        .featured-article .meta {
+            margin-bottom: 1rem;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card:last-child {
+            border-bottom: none;
+        }
+
+        .card-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .card h3 {
+            margin-top: 0.2rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card h3 a {
+            border-bottom: none;
+        }
+
+        .card h3 a:hover {
+            color: var(--accent);
+        }
+
+        .card-excerpt {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.6rem;
+        }
+
+        .meta {
+            font-size: 0.8rem;
+            color: #6b6b6b;
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .meta .reading-time {
+            background: var(--paper);
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .author-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .author-badge img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin: 0;
+            object-fit: cover;
+        }
+
+        /* ---------- SIDEBAR ---------- */
+        .sidebar {
+            font-size: 0.95rem;
+        }
+
+        .sidebar-widget {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.8rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .sidebar-widget:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget h4 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 0.7rem;
+            border-bottom: 1px dotted var(--border-subtle);
+            padding-bottom: 0.7rem;
+        }
+
+        .sidebar-widget li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget a {
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: white;
+        }
+
+        .search-box input {
+            border: none;
+            padding: 0.7rem 1rem;
+            font-size: 0.9rem;
+            width: 100%;
+            outline: none;
+            font-family: var(--font-sans);
+            background: white;
+        }
+
+        .search-box button {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0 1.2rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.15s;
+        }
+
+        .search-box button:hover {
+            background: var(--accent);
+        }
+
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .category-list a {
+            background: var(--paper-alt);
+            padding: 0.2rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+        }
+
+        .category-list a:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        /* ---------- LONG-FORM ARTICLE SECTIONS ---------- */
+        .full-article {
+            margin: 3.5rem 0 2rem;
+            border-top: 2px solid var(--ink);
+            padding-top: 2.5rem;
+        }
+
+        .full-article h2 {
+            margin-top: 0;
+        }
+
+        .full-article .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: #6b6b6b;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* ---------- FAQ ---------- */
+        .faq-section {
+            margin: 3rem 0;
+            background: var(--paper-alt);
+            padding: 2rem 2rem 1.5rem;
+            border-radius: var(--radius);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 1rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: var(--accent);
+            transition: transform 0.2s;
+        }
+
+        .faq-item.open .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            padding-right: 1rem;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 400px;
+            margin-top: 0.7rem;
+        }
+
+        /* ---------- NEWSLETTER ---------- */
+        .newsletter {
+            background: var(--ink);
+            color: var(--paper);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .newsletter h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        .newsletter p {
+            color: #b0b0b0;
+            max-width: 500px;
+            margin: 0.5rem auto 1.5rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 480px;
+            margin: 0 auto;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 0.95rem;
+            min-width: 200px;
+        }
+
+        .newsletter-form button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .newsletter-form button:hover {
+            background: #a04a2e;
+        }
+
+        /* ---------- FOOTER ---------- */
+        .editorial-footer {
+            border-top: 2px solid var(--ink);
+            margin-top: 4rem;
+            padding: 2.5rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-brand .logo {
+            font-size: 1.6rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+            max-width: 280px;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: var(--text-secondary);
+            border-bottom: none;
+            font-size: 0.85rem;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .copyright {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8a8a8a;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* ---------- SEARCH / FILTER RESULTS ---------- */
+        .search-results-message {
+            margin: 1rem 0;
+            font-style: italic;
+            color: var(--accent);
+            display: none;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .sidebar {
+                border-top: 1px solid var(--border-subtle);
+                padding-top: 2rem;
+            }
+
+            .editorial-footer {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0 1rem;
+            }
+
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+
+            .blog-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-article {
+                padding: 1.5rem;
+            }
+
+            .editorial-footer {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="blog-header">
+    <div class="logo-area">
+        <a href="#" class="logo">Architectural <span>Line Theory</span></a>
+        <div class="tagline">Interior · Architecture · Material Culture</div>
+    </div>
+    <nav>
+        <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ============ SEARCH MESSAGE ============ -->
+<div id="searchMessage" class="search-results-message"></div>
+
+<!-- ============ MAIN CONTAINER ============ -->
+<div class="container">
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main>
+
+        <!-- FEATURED ARTICLE -->
+        <article class="featured-article" id="featured">
+            <div class="card-category">Featured · Interior Design</div>
+            <h2><a href="#">The Silent Language of Space: How Plan Layouts Shape Daily Life</a></h2>
+            <div class="meta">
+                <span>Elena Marchetti</span>
+                <span>·</span>
+                <span>March 12, 2025</span>
+                <span class="reading-time">18 min read</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1527576539890-dfa815648363?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJjaGl0ZWN0dXJlfGVufDB8fDB8fHww" alt="Open-plan living room with large windows, natural light, and minimalist furniture layout." loading="lazy">
+            <p>Every wall, threshold, and sightline carries a silent message. In this long-form investigation, we examine how the geometry of a floor plan influences movement, privacy, and the subtle rhythms of everyday life — from the width of a hallway to the placement of a kitchen island.</p>
+            <p><a href="#">Read the full article →</a></p>
+        </article>
+
+        <!-- ARTICLE GRID -->
+        <section id="articles">
+            <h2>Latest Articles</h2>
+            <div class="article-grid" id="articleGrid">
+
+                <!-- CARD 1 -->
+                <article class="card" data-category="interior design" data-title="the silent language of space">
+                    <div class="card-category">Interior Design</div>
+                    <h3><a href="#">The Silent Language of Space: How Plan Layouts Shape Daily Life</a></h3>
+                    <p class="card-excerpt">From circulation paths to furniture placement, the geometry of a home quietly directs how we live. A deep dive into spatial syntax.</p>
+                    <div class="meta"><span>Elena Marchetti</span><span>·</span><span>18 min read</span></div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="card" data-category="materials" data-title="concrete that breathes">
+                    <div class="card-category">Materials</div>
+                    <h3><a href="#">Concrete That Breathes: The New Wave of Permeable Facades</a></h3>
+                    <p class="card-excerpt">Innovative concrete mixes and modular systems are reducing urban heat while adding texture and depth to modern facades.</p>
+                    <div class="meta"><span>Marcus Chen</span><span>·</span><span>12 min read</span></div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="card" data-category="lighting" data-title="layering light">
+                    <div class="card-category">Lighting</div>
+                    <h3><a href="#">Layering Light: A Practical Guide to Residential Illumination</a></h3>
+                    <p class="card-excerpt">Ambient, task, and accent lighting — how to combine them for comfort, functionality, and atmosphere in every room.</p>
+                    <div class="meta"><span>Sofia Lindqvist</span><span>·</span><span>9 min read</span></div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="card" data-category="small spaces" data-title="small spaces">
+                    <div class="card-category">Small Spaces</div>
+                    <h3><a href="#">Designing for 40 Square Meters: Lessons from Compact Urban Homes</a></h3>
+                    <p class="card-excerpt">Multifunctional furniture, vertical storage, and the psychology of perceived space — real solutions from Tokyo, Barcelona, and New York.</p>
+                    <div class="meta"><span>Yuki Tanaka</span><span>·</span><span>14 min read</span></div>
+                </article>
+
+                <!-- CARD 5 -->
+                <article class="card" data-category="architecture" data-title="brutalism">
+                    <div class="card-category">Architecture</div>
+                    <h3><a href="#">Brutalism Reconsidered: Why Concrete Still Matters</a></h3>
+                    <p class="card-excerpt">Beyond the aesthetic clichés — a critical look at the social and environmental legacy of brutalist housing and civic buildings.</p>
+                    <div class="meta"><span>David Okonkwo</span><span>·</span><span>16 min read</span></div>
+                </article>
+
+                <!-- CARD 6 -->
+                <article class="card" data-category="furniture" data-title="furniture">
+                    <div class="card-category">Furniture</div>
+                    <h3><a href="#">The Case for Fewer, Better Pieces: A Furniture Philosophy</a></h3>
+                    <p class="card-excerpt">Why investing in well-made, timeless furniture reduces waste and creates more harmonious interiors over time.</p>
+                    <div class="meta"><span>Clara Mendes</span><span>·</span><span>11 min read</span></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- LONG-FORM ARTICLE 1 -->
+        <article class="full-article" id="longform1">
+            <h2>The Silent Language of Space: How Plan Layouts Shape Daily Life</h2>
+            <div class="article-meta">
+                <span>By Elena Marchetti</span>
+                <span>March 12, 2025</span>
+                <span>18 min read</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=600&fit=crop" alt="Architectural floor plan sketch with annotations and a scale ruler on a wooden table." loading="lazy">
+            <p>Space is never neutral. The arrangement of rooms, the width of a corridor, the position of a window — these are not merely functional decisions. They are psychological prompts. A well-proportioned entryway signals welcome; a narrow galley kitchen creates efficiency but can also induce stress. In this article, we examine the grammar of domestic space through the lens of spatial syntax and environmental psychology.</p>
+            <h3>Circulation as narrative</h3>
+            <p>Think of a home as a sequence of experiences. The path from front door to living room, the turn toward a private wing, the glimpse of a garden through a hallway window — each moment is choreographed by the plan. When circulation is an afterthought, rooms become isolated cells. When it is designed with intention, the home feels coherent and generous.</p>
+            <blockquote>“The plan is the generator. It is the invisible architecture that holds everything together.” — Le Corbusier (paraphrased)</blockquote>
+            <h3>Proxemics and the 18-inch rule</h3>
+            <p>Edward T. Hall’s work on personal space revealed that we instinctively maintain distances. In design, ignoring these thresholds leads to discomfort. A dining table placed too close to a wall, a sofa that blocks a natural gathering point — these small errors accumulate. The best plans respect the unspoken distances we carry in our bodies.</p>
+            <p>Consider the kitchen island. At 36 inches high and 40 inches wide, it becomes a social hub. Narrow it by six inches and it becomes merely a prep surface. Widen it by a foot and it may dominate the room. Dimensions are never arbitrary.</p>
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&h=600&fit=crop" alt="Minimalist kitchen with a large island, pendant lights, and a clear circulation path around it." loading="lazy">
+            <h3>Case study: A 1920s apartment reworked</h3>
+            <p>We look at a 90-square-meter apartment in Milan where removing a single non-structural wall transformed a dark corridor into a light-filled library. The clients gained not just square meters but a new way of moving through their home. The lesson: sometimes the most impactful design move is subtraction.</p>
+            <p>This article continues in our premium print edition. For the full text, including diagrams and measured drawings, see <a href="#">Issue 14</a>.</p>
+        </article>
+
+        <!-- LONG-FORM ARTICLE 2 -->
+        <article class="full-article" id="longform2">
+            <h2>Materials That Age Gracefully: Brass, Oak, and Lime Plaster</h2>
+            <div class="article-meta">
+                <span>By Marcus Chen</span>
+                <span>February 28, 2025</span>
+                <span>14 min read</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=600&fit=crop" alt="Close-up of a brass door handle with a natural patina against a lime plaster wall." loading="lazy">
+            <p>In an era of disposable finishes, there is a quiet rebellion in choosing materials that improve with time. Brass develops a patina; oak deepens in color; lime plaster breathes and regulates humidity. These are not just aesthetic choices — they are ethical ones.</p>
+            <h3>The problem with perfection</h3>
+            <p>Many modern materials are designed to look pristine on day one. But within months, they show wear, scratches, or fading. In contrast, materials like unlacquered brass and solid timber are meant to be lived with. Their surfaces tell the story of the home.</p>
+            <h3>Lime plaster: the original smart material</h3>
+            <p>Used for centuries, lime plaster is vapor-permeable, naturally antibacterial, and has a low embodied energy. It also creates a soft, luminous surface that paint cannot replicate. Application requires skill, but the result is a wall that feels alive.</p>
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&h=600&fit=crop" alt="Textured lime plaster wall in a bedroom with soft morning light and a linen curtain." loading="lazy">
+            <p>We speak with plasterer Anna Kowalski about the revival of traditional techniques in contemporary interiors. “People are tired of flat walls,” she says. “They want texture, depth, and a connection to craft.”</p>
+        </article>
+
+        <!-- FAQ SECTION -->
+        <section class="faq-section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">What is the ideal ceiling height for a living room?</div>
+                <div class="faq-answer">While 2.4 meters (8 feet) is standard, a height of 2.7–3 meters (9–10 feet) creates a more generous, airy feel. If you have lower ceilings, avoid heavy pendant lights and use vertical lines to draw the eye upward.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do I choose a color palette for a north-facing room?</div>
+                <div class="faq-answer">North-facing rooms receive cool, indirect light. Warm tones — soft yellows, blush pinks, warm whites, and earthy terracottas — help balance the blue-ish cast. Avoid cool greys and icy blues, which can make the room feel chilly.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is an open-plan layout always better?</div>
+                <div class="faq-answer">Not necessarily. Open plans are great for social connection but can be noisy and lack privacy. Consider a broken-plan approach: distinct zones with partial walls, changes in floor level, or large sliding doors to balance openness and separation.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are the most common lighting mistakes?</div>
+                <div class="faq-answer">Relying on a single central ceiling light is the biggest mistake. Layer your lighting: ambient (general), task (reading, cooking), and accent (art, architectural features). Use dimmers wherever possible.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can I make a small bathroom feel larger?</div>
+                <div class="faq-answer">Use large-format tiles with minimal grout lines, a wall-hung vanity, and a curbless shower. A large mirror and a consistent color palette also help. Avoid small, busy patterns.</div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter" id="newsletter">
+            <h3>The Line Theory Weekly</h3>
+            <p>One thoughtful email every Sunday. Essays, project reviews, and practical design advice — no spam, ever.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Your email address" required aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+            <p style="font-size:0.75rem; margin-top:1rem; color:#888;">By subscribing you agree to our <a href="#" style="color:#ccc; border-bottom:1px solid #555;">Privacy Policy</a>.</p>
+        </section>
+
+        <!-- ABOUT / EDITORIAL -->
+        <section class="full-article" id="about">
+            <h2>About Architectural Line Theory</h2>
+            <p>Founded in 2019, <em>Architectural Line Theory</em> is an independent publication for people who care about the built environment. We publish long-form criticism, practical guides, and interviews with architects, designers, and makers. Our editorial stance is simple: good design is not about trends — it is about thoughtfulness, longevity, and human experience.</p>
+            <div class="author-badge">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="Portrait of Elena Marchetti, Editor-in-Chief." loading="lazy">
+                <div><strong>Elena Marchetti</strong> — Editor-in-Chief</div>
+            </div>
+            <div class="author-badge">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop" alt="Portrait of Marcus Chen, Senior Editor." loading="lazy">
+                <div><strong>Marcus Chen</strong> — Senior Editor, Materials</div>
+            </div>
+            <div class="author-badge">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" alt="Portrait of Sofia Lindqvist, Lighting Editor." loading="lazy">
+                <div><strong>Sofia Lindqvist</strong> — Lighting Editor</div>
+            </div>
+        </section>
+
+        <!-- CONTACT / PRIVACY / TERMS -->
+        <section class="full-article" id="contact" style="border-top: none; padding-top: 0;">
+            <h2>Contact & Editorial Policies</h2>
+            <p>We welcome pitches, letters, and corrections. Reach us at <a href="mailto:editors@archline.theory">editors@archline.theory</a>.</p>
+            <p><strong>Privacy:</strong> We do not sell or share your data. Newsletter emails are managed by a GDPR-compliant provider.</p>
+            <p><strong>Terms:</strong> All content is copyrighted. Short excerpts with attribution are permitted for non-commercial use.</p>
+            <p><strong>Cookies:</strong> This site uses essential cookies only. No tracking pixels.</p>
+        </section>
+
+    </main>
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+
+        <!-- SEARCH -->
+        <div class="sidebar-widget">
+            <h4>Search</h4>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+                <button id="searchBtn" aria-label="Submit search">Go</button>
+            </div>
+        </div>
+
+        <!-- CATEGORIES -->
+        <div class="sidebar-widget" id="categories">
+            <h4>Categories</h4>
+            <div class="category-list">
+                <a href="#" data-cat="all">All</a>
+                <a href="#" data-cat="interior design">Interior Design</a>
+                <a href="#" data-cat="architecture">Architecture</a>
+                <a href="#" data-cat="materials">Materials</a>
+                <a href="#" data-cat="lighting">Lighting</a>
+                <a href="#" data-cat="furniture">Furniture</a>
+                <a href="#" data-cat="small spaces">Small Spaces</a>
+            </div>
+        </div>
+
+        <!-- POPULAR ARTICLES -->
+        <div class="sidebar-widget">
+            <h4>Popular This Month</h4>
+            <ul>
+                <li><a href="#">The Silent Language of Space</a> <span style="color:#999; font-size:0.8rem;">18 min</span></li>
+                <li><a href="#">Concrete That Breathes</a> <span style="color:#999; font-size:0.8rem;">12 min</span></li>
+                <li><a href="#">Layering Light: A Practical Guide</a> <span style="color:#999; font-size:0.8rem;">9 min</span></li>
+                <li><a href="#">Brutalism Reconsidered</a> <span style="color:#999; font-size:0.8rem;">16 min</span></li>
+                <li><a href="#">The Case for Fewer, Better Pieces</a> <span style="color:#999; font-size:0.8rem;">11 min</span></li>
+            </ul>
+        </div>
+
+        <!-- EDITOR'S PICK -->
+        <div class="sidebar-widget">
+            <h4>Editor’s Pick</h4>
+            <div class="card" style="border-bottom: none; padding-bottom: 0;">
+                <div class="card-category">Essay</div>
+                <h3 style="font-size:1.1rem;"><a href="#">Against the Open Plan: In Defense of Rooms</a></h3>
+                <p class="card-excerpt" style="font-size:0.9rem;">Why the pendulum is swinging back toward defined, intimate spaces.</p>
+                <div class="meta"><span>Elena Marchetti</span><span>·</span><span>7 min read</span></div>
+            </div>
+        </div>
+
+        <!-- ABOUT THE JOURNAL -->
+        <div class="sidebar-widget">
+            <h4>About</h4>
+            <p style="font-size:0.9rem;">Architectural Line Theory is an independent journal covering interior design, architecture, and material culture. Published weekly since 2019.</p>
+        </div>
+
+    </aside>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="editorial-footer">
+    <div class="footer-brand">
+        <a href="#" class="logo">Architectural <span>Line Theory</span></a>
+        <p>An independent publication for thoughtful design. We believe in the power of well-considered spaces.</p>
+    </div>
+    <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+            <li><a href="#contact">Privacy</a></li>
+            <li><a href="#contact">Terms</a></li>
+            <li><a href="#contact">Cookies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h5>Follow</h5>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        © 2025 Architectural Line Theory. All rights reserved. Built with care.
+    </div>
+</footer>
+
+<!-- ============ JAVASCRIPT ============ -->
+<script>
+    (function() {
+        // --- FAQ TOGGLE ---
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                // close others (optional)
+                faqItems.forEach(i => i.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+
+        // --- SEARCH FUNCTIONALITY ---
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const articleGrid = document.getElementById('articleGrid');
+        const cards = articleGrid ? Array.from(articleGrid.querySelectorAll('.card')) : [];
+        const searchMessage = document.getElementById('searchMessage');
+
+        function performSearch() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (!query) {
+                cards.forEach(card => card.classList.remove('hidden'));
+                searchMessage.style.display = 'none';
+                return;
+            }
+            let visibleCount = 0;
+            cards.forEach(card => {
+                const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+                const excerpt = card.querySelector('.card-excerpt')?.textContent.toLowerCase() || '';
+                const category = card.dataset.category || '';
+                if (title.includes(query) || excerpt.includes(query) || category.includes(query)) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+            searchMessage.textContent = visibleCount === 0 ? `No articles found for “${query}”.` : `Showing ${visibleCount} article${visibleCount > 1 ? 's' : ''} for “${query}”.`;
+            searchMessage.style.display = 'block';
+        }
+
+        if (searchBtn) searchBtn.addEventListener('click', performSearch);
+        if (searchInput) {
+            searchInput.addEventListener('keyup', (e) => {
+                if (e.key === 'Enter') performSearch();
+            });
+        }
+
+        // --- CATEGORY FILTERING (sidebar) ---
+        const categoryLinks = document.querySelectorAll('.category-list a');
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const cat = link.dataset.cat;
+                if (cat === 'all') {
+                    cards.forEach(card => card.classList.remove('hidden'));
+                    searchMessage.style.display = 'none';
+                    if (searchInput) searchInput.value = '';
+                    return;
+                }
+                let visibleCount = 0;
+                cards.forEach(card => {
+                    if (card.dataset.category === cat) {
+                        card.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+                searchMessage.textContent = `Category: ${cat} — ${visibleCount} article${visibleCount > 1 ? 's' : ''}`;
+                searchMessage.style.display = 'block';
+                if (searchInput) searchInput.value = '';
+            });
+        });
+
+        // --- NEWSLETTER FORM (prevent default) ---
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                if (emailInput && emailInput.value) {
+                    alert(`Thank you for subscribing to The Line Theory Weekly. We'll send a confirmation to ${emailInput.value}.`);
+                    emailInput.value = '';
+                }
+            });
+        }
+
+        // --- SMOOTH SCROLL FOR ANCHOR LINKS (optional) ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+    })();
+</script>
+
+</body>
+</html>

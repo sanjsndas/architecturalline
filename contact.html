@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · Architectural Line Theory</title>
+    <meta name="description" content="Get in touch with the editors of Architectural Line Theory. Pitches, letters, corrections, and general inquiries.">
+    <meta name="keywords" content="contact architecture journal, editorial contact, pitch architecture blog, write for us">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact · Architectural Line Theory">
+    <meta property="og:description" content="Reach the editors, send a pitch, or ask a question about design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://archline.theory/contact.html">
+    <meta property="og:image" content="https://plus.unsplash.com/premium_photo-1681550097108-187abe10d445?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXJjaGl0ZWN0dXJlfGVufDB8fDB8fHww">
+    <link rel="canonical" href="https://archline.theory/contact.html">
+
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1e1e1e;
+            --paper: #faf9f7;
+            --paper-alt: #f2f0ed;
+            --accent: #b75c3a;
+            --accent-soft: #d9c9b6;
+            --border-subtle: #e0dbd5;
+            --text-secondary: #4a4a4a;
+            --font-serif: 'Georgia', 'Times New Roman', 'Times', serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --spacing-unit: 1.5rem;
+            --radius: 4px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            padding: 0 1.25rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.6rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 2rem; margin-top: 2.5rem; margin-bottom: 1.2rem; }
+        h3 { font-size: 1.45rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+        h4 { font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+            color: var(--accent);
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent-soft);
+            padding-left: 1.5rem;
+            margin: 1.8rem 0;
+            font-style: italic;
+            color: #3d3d3d;
+            font-size: 1.1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius);
+            margin: 1.8rem 0;
+            background: #e8e4df;
+        }
+
+        /* ---------- HEADER ---------- */
+        .blog-header {
+            padding: 2rem 0 1rem;
+            border-bottom: 2px solid var(--ink);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .logo-area {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            color: var(--ink);
+            border-bottom: none;
+        }
+
+        .logo span {
+            font-weight: 400;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-top: 0.3rem;
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 500;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links a {
+            border-bottom: none;
+            color: var(--text-secondary);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* ---------- MAIN LAYOUT ---------- */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3.5rem;
+            align-items: start;
+        }
+
+        /* ---------- CONTACT PAGE SPECIFIC ---------- */
+        .contact-hero {
+            background: var(--paper-alt);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            margin-bottom: 2.5rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .contact-hero h1 {
+            margin-top: 0;
+            font-size: 2.4rem;
+        }
+
+        .contact-hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-card {
+            background: var(--paper-alt);
+            padding: 1.8rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .contact-card h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 0.75rem;
+        }
+
+        .contact-card p {
+            font-size: 0.95rem;
+        }
+
+        .contact-card .label {
+            font-weight: 600;
+            color: var(--ink);
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        .contact-form {
+            background: var(--paper-alt);
+            padding: 2rem;
+            border-radius: var(--radius);
+            margin: 2.5rem 0;
+        }
+
+        .contact-form h3 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            background: white;
+            transition: border-color 0.15s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        .btn-primary {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0.9rem 2.2rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background 0.15s;
+            font-family: var(--font-sans);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent);
+        }
+
+        .form-note {
+            font-size: 0.8rem;
+            color: #8a8a8a;
+            margin-top: 1rem;
+        }
+
+        /* ---------- SIDEBAR ---------- */
+        .sidebar {
+            font-size: 0.95rem;
+        }
+
+        .sidebar-widget {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.8rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .sidebar-widget:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget h4 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 0.7rem;
+            border-bottom: 1px dotted var(--border-subtle);
+            padding-bottom: 0.7rem;
+        }
+
+        .sidebar-widget li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget a {
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: white;
+        }
+
+        .search-box input {
+            border: none;
+            padding: 0.7rem 1rem;
+            font-size: 0.9rem;
+            width: 100%;
+            outline: none;
+            font-family: var(--font-sans);
+            background: white;
+        }
+
+        .search-box button {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0 1.2rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.15s;
+        }
+
+        .search-box button:hover {
+            background: var(--accent);
+        }
+
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .category-list a {
+            background: var(--paper-alt);
+            padding: 0.2rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+        }
+
+        .category-list a:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        /* ---------- FAQ (contact page) ---------- */
+        .faq-section {
+            margin: 3rem 0;
+            background: var(--paper-alt);
+            padding: 2rem 2rem 1.5rem;
+            border-radius: var(--radius);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 1rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: var(--accent);
+            transition: transform 0.2s;
+        }
+
+        .faq-item.open .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            padding-right: 1rem;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 400px;
+            margin-top: 0.7rem;
+        }
+
+        /* ---------- FOOTER ---------- */
+        .editorial-footer {
+            border-top: 2px solid var(--ink);
+            margin-top: 4rem;
+            padding: 2.5rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-brand .logo {
+            font-size: 1.6rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+            max-width: 280px;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: var(--text-secondary);
+            border-bottom: none;
+            font-size: 0.85rem;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .copyright {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8a8a8a;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .sidebar {
+                border-top: 1px solid var(--border-subtle);
+                padding-top: 2rem;
+            }
+
+            .editorial-footer {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0 1rem;
+            }
+
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+
+            .blog-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .editorial-footer {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .contact-hero {
+                padding: 1.5rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="blog-header">
+    <div class="logo-area">
+        <a href="index.html" class="logo">Architectural <span>Line Theory</span></a>
+        <div class="tagline">Interior · Architecture · Material Culture</div>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ============ MAIN CONTAINER ============ -->
+<div class="container">
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main>
+
+        <!-- CONTACT HERO -->
+        <section class="contact-hero">
+            <h1>Let’s talk about space</h1>
+            <p>Whether you have a story tip, a correction, a partnership idea, or simply want to share your thoughts on a recent article — we read every message. Our editors respond within 2–3 working days.</p>
+        </section>
+
+        <!-- CONTACT GRID: DIRECT EMAILS + EDITORIAL -->
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Editorial & Pitches</h3>
+                <p><span class="label">Email:</span> <a href="mailto:editors@archline.theory">editors@archline.theory</a></p>
+                <p>We welcome pitches for long-form articles, case studies, and critical essays. Please include a short outline (150–200 words) and a link to previous writing if available.</p>
+                <p style="font-size:0.9rem; color:#6b6b6b; margin-bottom:0;">Response time: 3–5 days</p>
+            </div>
+            <div class="contact-card">
+                <h3>General & Press</h3>
+                <p><span class="label">Email:</span> <a href="mailto:hello@archline.theory">hello@archline.theory</a></p>
+                <p>For general inquiries, advertising, press requests, or permissions. We do not accept sponsored content that compromises editorial independence.</p>
+                <p style="font-size:0.9rem; color:#6b6b6b; margin-bottom:0;">Response time: 2–4 days</p>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form" id="contact-form">
+            <h3>Send us a message</h3>
+            <form id="directContactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="pitch">Article pitch</option>
+                        <option value="correction">Correction / feedback</option>
+                        <option value="press">Press / media</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us what’s on your mind..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send message</button>
+                <p class="form-note">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>. We never share your details.</p>
+            </form>
+        </section>
+
+        <!-- FAQ SECTION (contact-specific) -->
+        <section class="faq-section" id="faq">
+            <h2>Contact FAQ</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How quickly do you respond to pitches?</div>
+                <div class="faq-answer">We aim to respond to every pitch within 5 working days. If you haven’t heard back after a week, feel free to send a gentle follow-up.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you accept guest posts?</div>
+                <div class="faq-answer">We rarely accept unsolicited guest posts, but we do commission articles from architects, designers, and researchers. If you have a unique perspective and strong writing samples, send us a pitch.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I republish an article from Architectural Line Theory?</div>
+                <div class="faq-answer">Short excerpts (up to 100 words) with a clear link back to the original are permitted for non-commercial use. For full republishing, please contact us for permission.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do I submit a correction?</div>
+                <div class="faq-answer">Email <a href="mailto:editors@archline.theory">editors@archline.theory</a> with the subject line “Correction” and the article URL. We review all corrections promptly.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you have a physical address?</div>
+                <div class="faq-answer">We are a digital-first publication with editors based in Milan, London, and New York. Our registered correspondence address is: Architectural Line Theory, Via Brera 12, 20121 Milano, Italy.</div>
+            </div>
+        </section>
+
+        <!-- ABOUT / EDITORIAL (abbreviated from main) -->
+        <section style="margin-top: 2rem;">
+            <h2>About the Editors</h2>
+            <p>Our editorial team brings together architects, designers, and journalists. We are always happy to connect with readers and contributors.</p>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <div class="author-badge" style="display: flex; align-items: center; gap: 0.8rem;">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="Portrait of Elena Marchetti." style="width: 48px; height: 48px; border-radius: 50%; margin: 0;">
+                    <div><strong>Elena Marchetti</strong><br><span style="font-size:0.8rem; color:#6b6b6b;">Editor-in-Chief</span></div>
+                </div>
+                <div class="author-badge" style="display: flex; align-items: center; gap: 0.8rem;">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop" alt="Portrait of Marcus Chen." style="width: 48px; height: 48px; border-radius: 50%; margin: 0;">
+                    <div><strong>Marcus Chen</strong><br><span style="font-size:0.8rem; color:#6b6b6b;">Senior Editor, Materials</span></div>
+                </div>
+                <div class="author-badge" style="display: flex; align-items: center; gap: 0.8rem;">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" alt="Portrait of Sofia Lindqvist." style="width: 48px; height: 48px; border-radius: 50%; margin: 0;">
+                    <div><strong>Sofia Lindqvist</strong><br><span style="font-size:0.8rem; color:#6b6b6b;">Lighting Editor</span></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+
+        <!-- SEARCH -->
+        <div class="sidebar-widget">
+            <h4>Search</h4>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+                <button id="searchBtn" aria-label="Submit search">Go</button>
+            </div>
+        </div>
+
+        <!-- CATEGORIES -->
+        <div class="sidebar-widget" id="categories">
+            <h4>Categories</h4>
+            <div class="category-list">
+                <a href="index.html" data-cat="all">All</a>
+                <a href="index.html" data-cat="interior design">Interior Design</a>
+                <a href="index.html" data-cat="architecture">Architecture</a>
+                <a href="index.html" data-cat="materials">Materials</a>
+                <a href="index.html" data-cat="lighting">Lighting</a>
+                <a href="index.html" data-cat="furniture">Furniture</a>
+                <a href="index.html" data-cat="small spaces">Small Spaces</a>
+            </div>
+        </div>
+
+        <!-- POPULAR ARTICLES -->
+        <div class="sidebar-widget">
+            <h4>Popular This Month</h4>
+            <ul>
+                <li><a href="index.html#longform1">The Silent Language of Space</a> <span style="color:#999; font-size:0.8rem;">18 min</span></li>
+                <li><a href="index.html#longform2">Concrete That Breathes</a> <span style="color:#999; font-size:0.8rem;">12 min</span></li>
+                <li><a href="index.html">Layering Light: A Practical Guide</a> <span style="color:#999; font-size:0.8rem;">9 min</span></li>
+                <li><a href="index.html">Brutalism Reconsidered</a> <span style="color:#999; font-size:0.8rem;">16 min</span></li>
+                <li><a href="index.html">The Case for Fewer, Better Pieces</a> <span style="color:#999; font-size:0.8rem;">11 min</span></li>
+            </ul>
+        </div>
+
+        <!-- EDITOR'S PICK -->
+        <div class="sidebar-widget">
+            <h4>Editor’s Pick</h4>
+            <div class="card" style="border-bottom: none; padding-bottom: 0;">
+                <div class="card-category">Essay</div>
+                <h3 style="font-size:1.1rem;"><a href="index.html">Against the Open Plan: In Defense of Rooms</a></h3>
+                <p class="card-excerpt" style="font-size:0.9rem;">Why the pendulum is swinging back toward defined, intimate spaces.</p>
+                <div class="meta"><span>Elena Marchetti</span><span>·</span><span>7 min read</span></div>
+            </div>
+        </div>
+
+        <!-- CONTACT INFO (sidebar) -->
+        <div class="sidebar-widget">
+            <h4>Direct Contact</h4>
+            <ul>
+                <li><a href="mailto:editors@archline.theory">editors@archline.theory</a></li>
+                <li><a href="mailto:hello@archline.theory">hello@archline.theory</a></li>
+                <li style="border-bottom: none; font-size:0.85rem; color:#6b6b6b; padding-top:0.3rem;">Via Brera 12, Milano</li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="editorial-footer">
+    <div class="footer-brand">
+        <a href="index.html" class="logo">Architectural <span>Line Theory</span></a>
+        <p>An independent publication for thoughtful design. We believe in the power of well-considered spaces.</p>
+    </div>
+    <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#articles">Articles</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h5>Follow</h5>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        © 2025 Architectural Line Theory. All rights reserved. Built with care.
+    </div>
+</footer>
+
+<!-- ============ JAVASCRIPT ============ -->
+<script>
+    (function() {
+        // --- FAQ TOGGLE ---
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                faqItems.forEach(i => i.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+
+        // --- CONTACT FORM (prevent default with confirmation) ---
+        const contactForm = document.getElementById('directContactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name')?.value || 'there';
+                const email = document.getElementById('email')?.value || '';
+                const subject = document.getElementById('subject')?.value || 'message';
+                alert(`Thank you, ${name}. Your ${subject} has been sent. We'll reply to ${email} shortly.`);
+                contactForm.reset();
+            });
+        }
+
+        // --- SMOOTH SCROLL FOR ANCHOR LINKS ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // --- SIDEBAR SEARCH (redirects to home with search message) ---
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        function redirectSearch() {
+            const query = searchInput.value.trim();
+            if (query) {
+                window.location.href = `index.html?search=${encodeURIComponent(query)}`;
+            }
+        }
+        if (searchBtn) searchBtn.addEventListener('click', redirectSearch);
+        if (searchInput) {
+            searchInput.addEventListener('keyup', (e) => {
+                if (e.key === 'Enter') redirectSearch();
+            });
+        }
+
+        // --- CATEGORY LINKS (sidebar) redirect to home with category filter ---
+        document.querySelectorAll('.category-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const cat = link.dataset.cat;
+                if (cat === 'all') {
+                    window.location.href = 'index.html';
+                } else {
+                    window.location.href = `index.html?category=${encodeURIComponent(cat)}`;
+                }
+            });
+        });
+
+        // --- NEWSLETTER FORM (not present on contact page, but included for safety) ---
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                if (emailInput && emailInput.value) {
+                    alert(`Thank you for subscribing. Confirmation sent to ${emailInput.value}.`);
+                    emailInput.value = '';
+                }
+            });
+        }
+
+    })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy · Architectural Line Theory</title>
+    <meta name="description" content="Cookies Policy for Architectural Line Theory. Learn how we use cookies and similar technologies.">
+    <meta name="keywords" content="cookies policy, tracking, GDPR, architecture journal cookies">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cookies Policy · Architectural Line Theory">
+    <meta property="og:description" content="Understand how we use cookies and how you can control them.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://archline.theory/cookies.html">
+    <meta property="og:image" content="https://plus.unsplash.com/premium_photo-1681550097108-187abe10d445?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXJjaGl0ZWN0dXJlfGVufDB8fDB8fHww">
+    <link rel="canonical" href="https://archline.theory/cookies.html">
+
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1e1e1e;
+            --paper: #faf9f7;
+            --paper-alt: #f2f0ed;
+            --accent: #b75c3a;
+            --accent-soft: #d9c9b6;
+            --border-subtle: #e0dbd5;
+            --text-secondary: #4a4a4a;
+            --font-serif: 'Georgia', 'Times New Roman', 'Times', serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --spacing-unit: 1.5rem;
+            --radius: 4px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            padding: 0 1.25rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.6rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 2rem; margin-top: 2.5rem; margin-bottom: 1.2rem; }
+        h3 { font-size: 1.45rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+        h4 { font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--accent);
+            color: var(--accent);
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent-soft);
+            padding-left: 1.5rem;
+            margin: 1.8rem 0;
+            font-style: italic;
+            color: #3d3d3d;
+            font-size: 1.1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius);
+            margin: 1.8rem 0;
+            background: #e8e4df;
+        }
+
+        /* ---------- HEADER ---------- */
+        .blog-header {
+            padding: 2rem 0 1rem;
+            border-bottom: 2px solid var(--ink);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .logo-area {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            color: var(--ink);
+            border-bottom: none;
+        }
+
+        .logo span {
+            font-weight: 400;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-top: 0.3rem;
+            font-weight: 400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 500;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links a {
+            border-bottom: none;
+            color: var(--text-secondary);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* ---------- MAIN LAYOUT ---------- */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3.5rem;
+            align-items: start;
+        }
+
+        /* ---------- COOKIES PAGE SPECIFIC ---------- */
+        .cookies-hero {
+            background: var(--paper-alt);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            margin-bottom: 2.5rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .cookies-hero h1 {
+            margin-top: 0;
+            font-size: 2.4rem;
+        }
+
+        .cookies-hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+        }
+
+        .cookies-meta {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+            color: #6b6b6b;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cookies-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .cookies-section {
+            margin: 2.5rem 0;
+        }
+
+        .cookies-section h2 {
+            margin-top: 2.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .cookies-section h3 {
+            margin-top: 1.8rem;
+        }
+
+        .cookies-highlight {
+            background: var(--paper-alt);
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius);
+            border-left: 3px solid var(--accent);
+            margin: 1.8rem 0;
+        }
+
+        .cookies-highlight p:last-child {
+            margin-bottom: 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .data-table th {
+            background: var(--ink);
+            color: white;
+            text-align: left;
+            padding: 0.8rem 1rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .data-table td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: var(--paper-alt);
+        }
+
+        .cookies-toc {
+            background: var(--paper-alt);
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius);
+            margin: 2rem 0;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .cookies-toc h4 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.8rem;
+            color: var(--accent);
+        }
+
+        .cookies-toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .cookies-toc li {
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+        }
+
+        .cookies-toc a {
+            color: var(--text-secondary);
+            border-bottom: none;
+        }
+
+        .cookies-toc a:hover {
+            color: var(--accent);
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: #8a8a8a;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        /* ---------- SIDEBAR ---------- */
+        .sidebar {
+            font-size: 0.95rem;
+        }
+
+        .sidebar-widget {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.8rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .sidebar-widget:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget h4 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 0.7rem;
+            border-bottom: 1px dotted var(--border-subtle);
+            padding-bottom: 0.7rem;
+        }
+
+        .sidebar-widget li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget a {
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: white;
+        }
+
+        .search-box input {
+            border: none;
+            padding: 0.7rem 1rem;
+            font-size: 0.9rem;
+            width: 100%;
+            outline: none;
+            font-family: var(--font-sans);
+            background: white;
+        }
+
+        .search-box button {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0 1.2rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.15s;
+        }
+
+        .search-box button:hover {
+            background: var(--accent);
+        }
+
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .category-list a {
+            background: var(--paper-alt);
+            padding: 0.2rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+        }
+
+        .category-list a:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        /* ---------- FOOTER ---------- */
+        .editorial-footer {
+            border-top: 2px solid var(--ink);
+            margin-top: 4rem;
+            padding: 2.5rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-brand .logo {
+            font-size: 1.6rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+            max-width: 280px;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: var(--text-secondary);
+            border-bottom: none;
+            font-size: 0.85rem;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .copyright {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8a8a8a;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .sidebar {
+                border-top: 1px solid var(--border-subtle);
+                padding-top: 2rem;
+            }
+
+            .editorial-footer {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0 1rem;
+            }
+
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+
+            .blog-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .editorial-footer {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+
+            .cookies-hero {
+                padding: 1.5rem;
+            }
+
+            .cookies-toc ul {
+                columns: 1;
+            }
+
+            .data-table {
+                font-size: 0.85rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 0.6rem 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="blog-header">
+    <div class="logo-area">
+        <a href="index.html" class="logo">Architectural <span>Line Theory</span></a>
+        <div class="tagline">Interior · Architecture · Material Culture</div>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ============ MAIN CONTAINER ============ -->
+<div class="container">
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main>
+
+        <!-- COOKIES HERO -->
+        <section class="cookies-hero">
+            <h1>Cookies Policy</h1>
+            <p>This policy explains how Architectural Line Theory uses cookies and similar technologies, what they are, and how you can control them.</p>
+            <div class="cookies-meta">
+                <span>📅 Effective: 1 January 2025</span>
+                <span>🔄 Last updated: 15 March 2025</span>
+            </div>
+        </section>
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="cookies-toc">
+            <h4>On this page</h4>
+            <ul>
+                <li><a href="#what-are-cookies">1. What are cookies?</a></li>
+                <li><a href="#how-we-use">2. How we use cookies</a></li>
+                <li><a href="#types-of-cookies">3. Types of cookies we use</a></li>
+                <li><a href="#third-party-cookies">4. Third-party cookies</a></li>
+                <li><a href="#managing-cookies">5. Managing your cookie preferences</a></li>
+                <li><a href="#browser-controls">6. Browser controls</a></li>
+                <li><a href="#changes">7. Changes to this policy</a></li>
+                <li><a href="#contact-cookies">8. Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- 1. WHAT ARE COOKIES -->
+        <section class="cookies-section" id="what-are-cookies">
+            <h2>1. What are cookies?</h2>
+            <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners.</p>
+            <p>Cookies allow a website to recognise your device and remember information about your visit, such as your preferred language and other settings. This can make your next visit easier and the site more useful to you.</p>
+            <div class="cookies-highlight">
+                <p><strong>Cookies are not programs</strong> and cannot carry viruses or install malware on your device. They simply store small pieces of information.</p>
+            </div>
+        </section>
+
+        <!-- 2. HOW WE USE -->
+        <section class="cookies-section" id="how-we-use">
+            <h2>2. How we use cookies</h2>
+            <p>We use cookies for several reasons:</p>
+            <ul>
+                <li><strong>Essential operation:</strong> to ensure the website functions correctly, including security, form submission, and remembering your cookie consent preferences.</li>
+                <li><strong>Analytics and performance:</strong> to understand how visitors interact with our content, which pages are most popular, and how we can improve the reading experience.</li>
+                <li><strong>Preferences:</strong> to remember settings you have chosen, such as display preferences.</li>
+                <li><strong>Third-party services:</strong> some cookies are placed by trusted third-party services we use, such as analytics providers.</li>
+            </ul>
+            <p>We do not use cookies to collect sensitive personal information, and we do not sell cookie data to third parties.</p>
+        </section>
+
+        <!-- 3. TYPES OF COOKIES WE USE -->
+        <section class="cookies-section" id="types-of-cookies">
+            <h2>3. Types of cookies we use</h2>
+            <p>Below is a detailed list of the cookies we use and their purposes:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name / Example</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Essential</strong></td>
+                        <td>cookie_consent</td>
+                        <td>Stores your cookie consent preferences so we don't ask again.</td>
+                        <td>1 year</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Essential</strong></td>
+                        <td>session_id</td>
+                        <td>Maintains your session while you browse the site (e.g., form security).</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Analytics</strong></td>
+                        <td>_ga, _gid</td>
+                        <td>Used by Google Analytics to distinguish users and track page views. Data is anonymised.</td>
+                        <td>2 years / 24 hours</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Analytics</strong></td>
+                        <td>plausible</td>
+                        <td>Privacy-focused analytics that does not collect personal data or use cross-site tracking.</td>
+                        <td>1 year</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Preferences</strong></td>
+                        <td>theme_pref</td>
+                        <td>Remembers whether you prefer light or dark mode.</td>
+                        <td>1 year</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Third-party</strong></td>
+                        <td>Various</td>
+                        <td>Set by embedded content (e.g., video players, social media widgets) if you interact with them.</td>
+                        <td>Varies</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>We may update this list from time to time as we add or remove services. The categories above are based on the ICC UK Cookie Guide.</p>
+        </section>
+
+        <!-- 4. THIRD-PARTY COOKIES -->
+        <section class="cookies-section" id="third-party-cookies">
+            <h2>4. Third-party cookies</h2>
+            <p>Some cookies are placed by third-party services that appear on our pages. We do not control these cookies. They are set by:</p>
+            <ul>
+                <li><strong>Analytics providers:</strong> to help us understand site usage (e.g., Google Analytics). These may track you across different websites.</li>
+                <li><strong>Embedded content:</strong> if you interact with embedded videos, maps, or social media buttons, those services may set their own cookies.</li>
+                <li><strong>Email delivery:</strong> our newsletter service may use tracking pixels to measure open rates, but only if you have subscribed.</li>
+            </ul>
+            <p>We recommend reviewing the privacy policies of these third parties for more information about their cookies and how to opt out.</p>
+        </section>
+
+        <!-- 5. MANAGING YOUR COOKIE PREFERENCES -->
+        <section class="cookies-section" id="managing-cookies">
+            <h2>5. Managing your cookie preferences</h2>
+            <p>When you first visit our site, you will see a cookie consent banner where you can accept or decline non-essential cookies. You can change your preferences at any time by clicking the "Cookie Settings" link in the footer or by adjusting your browser settings.</p>
+            <div class="cookies-highlight">
+                <p><strong>You can also delete cookies</strong> that have already been set. For instructions, see the "Browser controls" section below.</p>
+            </div>
+            <p>Please note that blocking some types of cookies may impact your experience on our site and the services we are able to offer.</p>
+        </section>
+
+        <!-- 6. BROWSER CONTROLS -->
+        <section class="cookies-section" id="browser-controls">
+            <h2>6. Browser controls</h2>
+            <p>Most web browsers allow some control of most cookies through the browser settings. To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit <a href="https://www.aboutcookies.org" target="_blank" rel="noopener">www.aboutcookies.org</a> or <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">www.allaboutcookies.org</a>.</p>
+            <p>To opt out of being tracked by Google Analytics across all websites, visit <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">https://tools.google.com/dlpage/gaoptout</a>.</p>
+            <ul>
+                <li><strong>Chrome:</strong> Settings → Privacy and security → Cookies and other site data</li>
+                <li><strong>Firefox:</strong> Options → Privacy & Security → Cookies and Site Data</li>
+                <li><strong>Safari:</strong> Preferences → Privacy → Cookies and website data</li>
+                <li><strong>Edge:</strong> Settings → Cookies and site permissions → Cookies and site data</li>
+            </ul>
+        </section>
+
+        <!-- 7. CHANGES -->
+        <section class="cookies-section" id="changes">
+            <h2>7. Changes to this policy</h2>
+            <p>We may update this Cookies Policy from time to time to reflect changes in technology, legislation, or our practices. When we do, we will revise the "Last updated" date at the top of this page.</p>
+            <p>We encourage you to review this page periodically to stay informed about how we use cookies.</p>
+        </section>
+
+        <!-- 8. CONTACT -->
+        <section class="cookies-section" id="contact-cookies">
+            <h2>8. Contact us</h2>
+            <p>If you have any questions about our use of cookies or this Cookies Policy, please contact us:</p>
+            <div class="cookies-highlight">
+                <p><strong>Email:</strong> <a href="mailto:privacy@archline.theory">privacy@archline.theory</a></p>
+                <p><strong>Postal address:</strong><br>
+                Architectural Line Theory<br>
+                Via Brera 12<br>
+                20121 Milano<br>
+                Italy</p>
+            </div>
+            <p>For general editorial inquiries, please use <a href="mailto:editors@archline.theory">editors@archline.theory</a>.</p>
+        </section>
+
+    </main>
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+
+        <!-- SEARCH -->
+        <div class="sidebar-widget">
+            <h4>Search</h4>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search articles..." aria-label="Search articles">
+                <button id="searchBtn" aria-label="Submit search">Go</button>
+            </div>
+        </div>
+
+        <!-- CATEGORIES -->
+        <div class="sidebar-widget" id="categories">
+            <h4>Categories</h4>
+            <div class="category-list">
+                <a href="index.html" data-cat="all">All</a>
+                <a href="index.html" data-cat="interior design">Interior Design</a>
+                <a href="index.html" data-cat="architecture">Architecture</a>
+                <a href="index.html" data-cat="materials">Materials</a>
+                <a href="index.html" data-cat="lighting">Lighting</a>
+                <a href="index.html" data-cat="furniture">Furniture</a>
+                <a href="index.html" data-cat="small spaces">Small Spaces</a>
+            </div>
+        </div>
+
+        <!-- POPULAR ARTICLES -->
+        <div class="sidebar-widget">
+            <h4>Popular This Month</h4>
+            <ul>
+                <li><a href="index.html#longform1">The Silent Language of Space</a> <span style="color:#999; font-size:0.8rem;">18 min</span></li>
+                <li><a href="index.html#longform2">Concrete That Breathes</a> <span style="color:#999; font-size:0.8rem;">12 min</span></li>
+                <li><a href="index.html">Layering Light: A Practical Guide</a> <span style="color:#999; font-size:0.8rem;">9 min</span></li>
+                <li><a href="index.html">Brutalism Reconsidered</a> <span style="color:#999; font-size:0.8rem;">16 min</span></li>
+                <li><a href="index.html">The Case for Fewer, Better Pieces</a> <span style="color:#999; font-size:0.8rem;">11 min</span></li>
+            </ul>
+        </div>
+
+        <!-- EDITOR'S PICK -->
+        <div class="sidebar-widget">
+            <h4>Editor’s Pick</h4>
+            <div class="card" style="border-bottom: none; padding-bottom: 0;">
+                <div class="card-category">Essay</div>
+                <h3 style="font-size:1.1rem;"><a href="index.html">Against the Open Plan: In Defense of Rooms</a></h3>
+                <p class="card-excerpt" style="font-size:0.9rem;">Why the pendulum is swinging back toward defined, intimate spaces.</p>
+                <div class="meta"><span>Elena Marchetti</span><span>·</span><span>7 min read</span></div>
+            </div>
+        </div>
+
+        <!-- CONTACT INFO (sidebar) -->
+        <div class="sidebar-widget">
+            <h4>Direct Contact</h4>
+            <ul>
+                <li><a href="mailto:editors@archline.theory">editors@archline.theory</a></li>
+                <li><a href="mailto:hello@archline.theory">hello@archline.theory</a></li>
+                <li style="border-bottom: none; font-size:0.85rem; color:#6b6b6b; padding-top:0.3rem;">Via Brera 12, Milano</li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="editorial-footer">
+    <div class="footer-brand">
+        <a href="index.html" class="logo">Architectural <span>Line Theory</span></a>
+        <p>An independent publication for thoughtful design. We believe in the power of well-considered spaces.</p>
+    </div>
+    <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#articles">Articles</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h5>Follow</h5>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        © 2025 Architectural Line Theory. All rights reserved. Built with care.
+    </div>
+</footer>
+
+<!-- ============ JAVASCRIPT ============ -->
+<script>
+    (function() {
+        // --- SMOOTH SCROLL FOR ANCHOR LINKS ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // --- SIDEBAR SEARCH (redirects to home with search message) ---
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        function redirectSearch() {
+            const query = searchInput.value.trim();
+            if (query) {
+                window.location.href = `index.html?search=${encodeURIComponent(query)}`;
+            }
+        }
+        if (searchBtn) searchBtn.addEventListener('click', redirectSearch);
+        if (searchInput) {
+            searchInput.addEventListener('keyup', (e) => {
+                if (e.key === 'Enter') redirectSearch();
+            });
+        }
+
+        // --- CATEGORY LINKS (sidebar) redirect to home with category filter ---
+        document.querySelectorAll('.category-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const cat = link.dataset.cat;
+                if (cat === 'all') {
+                    window.location.href = 'index.html';
+                } else {
+                    window.location.href = `index.html?category=${encodeURIComponent(cat)}`;
+                }
+            });
+        });
+
+        // --- NEWSLETTER FORM (not present on cookies page, but included for safety) ---
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                if (emailInput && emailInput.value) {
+                    alert(`Thank you for subscribing. Confirmation sent to ${emailInput.value}.`);
+                    emailInput.value = '';
+                }
+            });
+        }
+    })();
+</script>
+
+</body>
+</html>
